@@ -77,6 +77,11 @@ header .btn:active {--bs-btn-active-border-color: transparent;}
 header>div {width: var(--aside-width);}
 
 /* ========== main Section ========== */
+main {
+    width: calc(100% - var(--aside-width));
+    position: relative;
+    left: var(--aside-width);
+}
 
 /* ========== Loading Section ========== */
 #loading>div {
@@ -96,11 +101,7 @@ header>div {width: var(--aside-width);}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    main {
-        width: calc(100% - var(--aside-width));
-        position: relative;
-        left: var(--aside-width);
-    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
